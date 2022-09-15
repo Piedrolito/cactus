@@ -10,6 +10,19 @@ app.use((req, res, next) => {
     next();
   });
 
+app.get('/', (req, res, next) => {
+
+    res.status(200).json({
+        status: 'success',
+        data: {
+            name: 'name of your app',
+            version: '0.1.0'
+        }
+    });
+    next();
+
+});
+
 app.use('/api/stuff', (req, res, next) => {
     const stuff = [
       {
