@@ -1,0 +1,110 @@
+body {
+    background: #ffffff url(res/cactus.jpg) no-repeat scroll 0 0;
+}
+
+div#titre {
+    color: green;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    padding-top: 1%;
+}
+
+#image {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+div#input {
+    padding-top: 10%;
+    float: right;
+    width: 60%;
+    text-align: center;
+}
+
+#pseudo {
+    border-color: green;
+    border-radius: 25px;
+    font-size: 28pt;
+}
+
+#button {
+    padding-top: 6%;
+}
+
+button {
+    margin: 1%;
+    border-radius: 25px;
+    background-color: lightgreen;
+}
+
+button:hover {
+    background-color:limegreen;
+}
+
+button:focus {
+    background-color:green;
+}
+
+.button1 {
+    height: 30px;
+    width: 15%;
+}
+
+.button2 {
+    position: absolute;
+    float: bottom;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+body.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+div.popup-open {
+    visibility: visible;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: #fff;
+    width: 90%;
+    height: 90%;
+    z-index: 200;
+    border-radius: 100px;
+    border: 4mm ridge green;
+}
+
+#rule{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+div.popup-close {
+    visibility: hidden;
+}
+
+.button3 {
+    float: right;
+    background-color: red;
+    padding: 1%;
+    margin: 0%;
+}
+
+button:hover {
+    background-color:darkred;
+}
