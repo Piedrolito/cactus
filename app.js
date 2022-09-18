@@ -1,11 +1,12 @@
 const { Console } = require('console');
 const express = require('express');
+var bodyParser = require('body-parser');
 
 
 const app = express();
+app.use(bodyParser.json());
 
-app.use('/res', express.static('res'));
-app.use(express.static('res/img'));
+app.use('/', express.static('frontend'));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -15,7 +16,12 @@ app.use((req, res, next) => {
   });
 
 app.get('/', (req, res, next) => {
-    res.sendFile(__dirname + '/main.html');
+    res.sendFile(__dirname + '/frontend/acceuil.html');
+});
+
+app.post('/api/connection/cree', (req, res, next) => {
+  console.log(req.body.pseudo);
+  res.status(201).json({ message: 'Connection!'});
 });
 
 
