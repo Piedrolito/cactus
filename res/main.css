@@ -1,0 +1,30 @@
+body {
+    background-color: #FFFFFF;
+  }
+
+#input{
+    background-color: #58D68D;
+    align-items: center;
+}
+
+
+button {
+    margin: 1%;
+    border-radius: 25px;
+    background-color: lightgreen;
+}
+
+button:hover {
+    background-color:limegreen;
+}
+
+button:focus {
+    background-color:green;
+}
+
+.button2 {
+    position: absolute;
+    float: bottom;
+    right: 0;
+    bottom: 0;
+}

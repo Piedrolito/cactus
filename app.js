@@ -4,7 +4,8 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static('public'));
+app.use('/res', express.static('res'));
+app.use(express.static('res/img'));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
